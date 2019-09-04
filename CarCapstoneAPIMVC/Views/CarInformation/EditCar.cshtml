@@ -1,0 +1,22 @@
+﻿
+@{
+    ViewData["Title"] = "EditCar";
+}
+
+@model CarCapstoneAPIMVC.Models.CarInfo
+
+<h1>Edit Car</h1>
+
+<form action="EditCar" method="post">
+    <input type="hidden" name="Id" value="@Model.id" />
+    <input type="text" name="Make" value="@Model.make" placeholder="@Model.make" />
+    <input type="text" name="Model" value="@Model.model" placeholder="@Model.model" />
+    <input type="number" name="Year" value="@Model.year" placeholder="@Model.year" />
+    <input type="text" name="Color" value="@Model.color" placeholder="@Model.color" />
+
+
+    <input type="submit" value="Save Data" />
+
+
+
+</form>

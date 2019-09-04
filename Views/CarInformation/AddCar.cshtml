@@ -1,0 +1,18 @@
+﻿@{
+    ViewData["Title"] = "AddCar";
+}
+
+@model CarDealershipCapstoneAPI.Models.CarInfo
+
+<h1>Add Car</h1>
+
+<form asp-action="Index" asp-controller="CarInformation" method="post">
+    <input type="text" name="make" placeholder="Make" />
+    <input type="text" name="model" placeholder="Model" />
+    <input type="number" name="year" placeholder="Year" />
+    <input type="text" name="color" placeholder="Color" />
+
+
+    <input type="submit" value="Add Vroom Vroom Machine" />
+
+</form>
